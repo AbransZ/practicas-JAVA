@@ -1,9 +1,7 @@
 
 import javax.swing.JOptionPane;
 
-@author
-Admin.docente
-
+@author 
 public class MiPrimerFrame extends javax.swing.JFrame {
 
     public MiPrimerFrame() {
@@ -114,7 +112,7 @@ public class MiPrimerFrame extends javax.swing.JFrame {
                                 Short.MAX_VALUE));
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }// </editor-fold>                        
 
     private void UsuarioActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_UsuarioActionPerformed
         // TODO add your handling code here:
@@ -140,9 +138,7 @@ public class MiPrimerFrame extends javax.swing.JFrame {
         dispose();
     }
 
-    @param
-    args the
-    command line arguments
+  
 
     public static void main(String args[]) {
 
