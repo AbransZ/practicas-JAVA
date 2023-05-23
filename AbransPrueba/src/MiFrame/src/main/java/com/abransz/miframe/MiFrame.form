@@ -92,10 +92,8 @@
                           <Component id="jButton2" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="TCont" pref="83" max="32767" attributes="0"/>
-                              <Component id="TUsu" max="32767" attributes="0"/>
-                          </Group>
+                          <Component id="TCont" pref="83" max="32767" attributes="0"/>
+                          <Component id="TUsu" max="32767" attributes="0"/>
                           <Component id="IngCont" alignment="0" max="32767" attributes="0"/>
                           <Component id="jScrollPane1" alignment="0" pref="115" max="32767" attributes="0"/>
                       </Group>
@@ -176,6 +174,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Salir"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JPasswordField" name="IngCont">
         </Component>

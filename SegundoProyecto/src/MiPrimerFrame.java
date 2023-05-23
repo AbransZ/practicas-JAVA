@@ -1,7 +1,6 @@
 
 import javax.swing.JOptionPane;
 
-@author 
 public class MiPrimerFrame extends javax.swing.JFrame {
 
     public MiPrimerFrame() {
