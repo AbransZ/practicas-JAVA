@@ -249,7 +249,7 @@ public class Registro extends javax.swing.JFrame {
             Connection cn = DriverManager.getConnection(url, user, pass);
             PreparedStatement pst = cn.prepareStatement("insert into usuario value(?,?,?,?,?)");
 
-            pst.setString(1, "101");
+            pst.setString(1, "0");
             pst.setString(2, txtNombre.getText());
             pst.setString(3, txtApellido.getText());
             pst.setString(4, cont);
