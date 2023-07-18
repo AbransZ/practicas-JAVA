@@ -4,17 +4,21 @@
  */
 package InicioDeSesion;
 
-import java.sql.*;
 import javax.swing.JOptionPane;
+import java.sql.*;
 
-public class Registro extends javax.swing.JFrame {
+/**
+ *
+ * @author SO1
+ */
+public class registro1 extends javax.swing.JFrame {
 
     /**
-     * Creates new form Registro
+     * Creates new form registro1
      */
-    public Registro() {
+    public registro1() {
         initComponents();
-        this.setLocationRelativeTo(null);
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -38,7 +42,6 @@ public class Registro extends javax.swing.JFrame {
         txtNombre = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
         txtApellido = new javax.swing.JTextField();
-        txtInfo = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         txtIngUsuario = new javax.swing.JTextField();
@@ -47,6 +50,7 @@ public class Registro extends javax.swing.JFrame {
         btnIngresar = new javax.swing.JButton();
         btnCancelar = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
+        txtInfo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -91,9 +95,6 @@ public class Registro extends javax.swing.JFrame {
         jLabel8.setForeground(new java.awt.Color(153, 153, 153));
         jLabel8.setText("Apellido");
 
-        txtInfo.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        txtInfo.setForeground(new java.awt.Color(255, 255, 153));
-
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -101,23 +102,19 @@ public class Registro extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(txtInfo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(txtApellido, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtCOntraseña, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtApellido, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtCOntraseña, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(btnRegistrar)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btnLimpiar, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 91, Short.MAX_VALUE)))
-                .addContainerGap())
+                        .addComponent(btnRegistrar)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnLimpiar, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(97, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -142,9 +139,7 @@ public class Registro extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnRegistrar)
                     .addComponent(btnLimpiar))
-                .addGap(18, 18, 18)
-                .addComponent(txtInfo, javax.swing.GroupLayout.DEFAULT_SIZE, 38, Short.MAX_VALUE)
-                .addContainerGap())
+                .addContainerGap(62, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 270, 360));
@@ -211,13 +206,15 @@ public class Registro extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnIngresar)
                     .addComponent(btnCancelar))
-                .addContainerGap(148, Short.MAX_VALUE))
+                .addContainerGap(149, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 70, -1, -1));
-
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen/night-light-man-male.jpg"))); // NOI18N
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 5, 690, 490));
+
+        txtInfo.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        txtInfo.setForeground(new java.awt.Color(255, 255, 153));
+        getContentPane().add(txtInfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(1054, 6, -1, 443));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -225,19 +222,6 @@ public class Registro extends javax.swing.JFrame {
     private void txtUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUsuarioActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtUsuarioActionPerformed
-
-    private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
-        txtUsuario.setText(null);
-        txtNombre.setText(null);
-        txtApellido.setText(null);
-        txtCOntraseña.setText(null);
-        
-// TODO add your handling code here:
-    }//GEN-LAST:event_btnLimpiarActionPerformed
-
-    private void txtIngUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtIngUsuarioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtIngUsuarioActionPerformed
 
     private void btnRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarActionPerformed
         String url = "jdbc:mysql://localhost:3307/registro";
@@ -267,6 +251,19 @@ public class Registro extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnRegistrarActionPerformed
 
+    private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
+        txtUsuario.setText(null);
+        txtNombre.setText(null);
+        txtApellido.setText(null);
+        txtCOntraseña.setText(null);
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnLimpiarActionPerformed
+
+    private void txtIngUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtIngUsuarioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtIngUsuarioActionPerformed
+
     private void btnIngresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresarActionPerformed
         String url = "jdbc:mysql://localhost:3307/registro";
         String user = "root";
@@ -274,29 +271,28 @@ public class Registro extends javax.swing.JFrame {
         boolean validacion=false;
         try
         {
-            
-            
+
             Connection cn = DriverManager.getConnection(url, user, pass);
             PreparedStatement pst = cn.prepareStatement("select * from usuario where usuario = ? and contraseña = ?");
-            
+
             pst.setString(1, txtIngUsuario.getText());
             pst.setString(2, txtIngContraseña.getText());
-            
+
             ResultSet rs=pst.executeQuery();
-            
+
             if (rs.next())
             {
                 validacion=true;
-                
+
                 if (validacion==true)
                 {
                     Usuario usu=new Usuario();
                     usu.setVisible(true);
                     this.dispose();
                 }
-                
+
             } else
-                
+
             {
                 JOptionPane.showMessageDialog(null,"Datos incorrectos");
             }
@@ -307,7 +303,7 @@ public class Registro extends javax.swing.JFrame {
     }//GEN-LAST:event_btnIngresarActionPerformed
 
     private void btnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarActionPerformed
-            dispose();
+        dispose();
         // TODO add your handling code here:
     }//GEN-LAST:event_btnCancelarActionPerformed
 
@@ -332,23 +328,23 @@ public class Registro extends javax.swing.JFrame {
             }
         } catch (ClassNotFoundException ex)
         {
-            java.util.logging.Logger.getLogger(Registro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(registro1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex)
         {
-            java.util.logging.Logger.getLogger(Registro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(registro1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex)
         {
-            java.util.logging.Logger.getLogger(Registro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(registro1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex)
         {
-            java.util.logging.Logger.getLogger(Registro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(registro1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Registro().setVisible(true);
+                new registro1().setVisible(true);
             }
         });
     }
