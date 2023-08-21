@@ -28,7 +28,7 @@ public class PruebaFXyPOO extends Application{
         
         JOptionPane.showMessageDialog(null,Banesco.toString());
         JOptionPane.showMessageDialog(null,provincial.toString());
-        provincial.toString();
+        
 
 //launch(args);
     }
