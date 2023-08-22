@@ -70,6 +70,11 @@ public class pokemones {
                 }
 
                 break;
+                
+                case "bulbasur":
+                    
+                    
+                    break;
             default:
                JOptionPane.showMessageDialog(null, "Pokemon no Registrado!!");
                break;
